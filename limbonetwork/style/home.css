@@ -1,0 +1,107 @@
+html, body {
+  background: linear-gradient(to bottom, rgb(187, 185, 186), rgb(217, 4, 255), rgba(0, 0, 255, 0.688));
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  color: aliceblue;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+a:hover {
+  position: relative;
+  background-color:rgb(229, 6, 233);
+  padding: 3px;
+  margin: 3px;
+  width: 2.5%;
+  height: 60%;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: lightskyblue;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background: radial-gradient(circle, rgb(128, 3, 170), rgb(0, 67, 139));
+  color: aliceblue;
+  width: 100%; 
+  padding: 10px 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0 20px; 
+}
+
+.text {
+  color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text2 {
+  color: aliceblue;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;  /* Tamanho da imagem */
+  height: 75px;  /* Tamanho da imagem */
+  border-radius: 25%;  /* Faz a borda circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid transparent;
+  animation: borderAnimation 3s infinite; /* Animação da borda */
+}
+
+.image-container img {
+  width: 100%;  /* Ajusta a imagem ao tamanho do contêiner */
+  height: 100%;  /* Ajusta a imagem ao tamanho do contêiner */
+  border-radius: 50%;  /* Faz a imagem circular, se necessário */
+}
+
+@keyframes borderAnimation {
+  0% {
+      border-color: rgb(255, 0, 0);  /* Vermelho */
+  }
+  25% {
+      border-color: rgb(0, 255, 0);  /* Verde */
+  }
+  50% {
+      border-color: rgb(0, 0, 255);  /* Azul */
+  }
+  75% {
+      border-color: rgb(255, 255, 0);  /* Amarelo */
+  }
+  100% {
+      border-color: rgb(255, 0, 0);  /* Vermelho */
+  }
+}
